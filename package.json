@@ -1,7 +1,7 @@
 {
-  "name": "user-list",
+  "name": "role-roller",
   "version": "1.0.0",
-  "description": "",
+  "description": "D&D Character Generator",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "seed": "node seeds/seed.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caleb Bigham, Oscar Garcia, & Eric Bester",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -19,6 +19,15 @@
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
+    "pdf-creator-node": "^2.3.5",
     "sequelize": "^6.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbigham25/role-roller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cbigham25/role-roller/issues"
+  },
+  "homepage": "https://github.com/cbigham25/role-roller#readme"
 }
