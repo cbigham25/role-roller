@@ -1,13 +1,11 @@
 const loginFormHandler = async (event) => {
-  // TODO: Add a comment describing the functionality of this statement
   event.preventDefault();
 
-  // TODO: Add a comment describing the functionality of these expressions
-  const email = document.querySelector('#email-login').value.trim();
-  const password = document.querySelector('#password-login').value.trim();
+  const email = document.querySelector('#einputEmail3').value.trim();
+  const password = document.querySelector('#inputPassword3').value.trim();
 
   if (email && password) {
-    // TODO: Add a comment describing the functionality of this expression
+    // Not sure if I need to change /api/users/login
     const response = await fetch('/api/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),

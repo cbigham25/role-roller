@@ -82,8 +82,15 @@ form {
 
 .nameandlevel h1 {
   margin-right: 25px;
+  }
 
+.create-button{
+text-align: center;
+margin-bottom: 20px;
+}
 
+  .score h1 {
+align-self: center;
 }
 
 .flex {
