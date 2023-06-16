@@ -1,10 +1,20 @@
 .main-body{
 display: flex;
 height:auto;
-background-color: aqua;
+background-color: rgb(156, 156, 156);
 
 
 }
+.login{
+text-align: center;
+position: relative;
+    top: 300px;
+}
+
+
+
+
+
 form{
 padding: 5px;
 
@@ -107,6 +117,15 @@ grid-template-columns: auto auto;
   
 .hit p ::after {
 content: icon;
+
+
+}
+.create{
+
+display: flex;
+
+
+
 
 
 }
