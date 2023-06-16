@@ -1,149 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-<div class="column">
-    
-    <a class="btn btn-primary" href="#" role="button">Logout</a>
-    <h2 class="margin">Username</h2>
+  <header>
+    <div class="column">
+      <a class="btn btn-primary logout-button" href="#" role="button">Logout</a>
+      <h2 class="margin">Username</h2>
+      <br>
+      <div class="create-button"><button class="btn btn-primary create-character" type="submit">Create
+          Character</button>
+      </div>
 
-</div>
-</header><br><br>
-<div class="create-button"><button class="btn btn-primary create-character" type="submit">Create Character</button>
-</div>
+      <main class="main flex">
 
-<main class="main flex">
+        <br>
 
+
+  </header>
+  <br>
+  <main class="main flex">
     <br>
-<br>
-<div id="overflowTest"  class="shadow p-3 mb-5 bg-body-tertiary rounded"><div class="card w-75 mb-3">
-
-    <div class="card-body">
-      <h5 class="card-title">Name</h5>
-      <p class="card-text">Level 10 human Barbarian</p>
-      <a href="#" class="btn btn-primary">view</a>
+    <br>
+    <div id="overflowTest" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+      <div class="card w-75 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Name</h5>
+          <p class="card-text">Level 10 human Barbarian</p>
+          <a href="#" class="btn btn-primary">view</a>
+        </div>
+      </div><br>
+      <div class="card w-75 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+      <div class="card w-75 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
     </div>
-  </div><br>
-  <div class="card w-75 mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
-    </div>
-  </div>
-  <div class="card w-75 mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
-    </div>
-  </div>
-</div>
 
     <section class="icons ">
-        <div class="nameandlevel"><h1>Hero McHero</h1>
-            <h2>level 10 Human Barbarian</h2></div>
-     <div class="flex">  
-        
-<div class="score">
-    
-<p>10</p>
-<h1>20</h1>
-<p>strength</p>
-</div><br>
+      <div class="nameandlevel">
+        <h1>Hero McHero</h1>
+        <h2>level 10 Human Barbarian</h2>
+      </div>
+      <div class="flex">
 
-<div class="score">
-    
-    <p>10</p>
-    <h1>20</h1>
-    <p>strength</p>
-    </div><br>
-    <div class="score">
-    
-        <p>10</p>
-        <h1>20</h1>
-        <p>strength</p>
+        <div class="score">
+
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
+        </div><br>
+
+        <div class="score">
+
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
         </div><br>
         <div class="score">
-    
-            <p>10</p>
-            <h1>20</h1>
-            <p>strength</p>
-            </div><br>
-            <div class="score">
-    
-                <p>10</p>
-                <h1>20</h1>
-                <p>strength</p>
-                </div><br>
-                <div class="score">
-    
-                <p>10</p>
-                <h1>20</h1>
-                <p>strength</p>
-                </div><br>
-            </div>
-            <div class="skills">
 
-                <div class="item1">
-                <h1>skills</h1>
-                <ul>
-                <li>Acrobatics  00</li>
-                <li>Animal Handling  00</li>
-                <li>Arcana  00</li>
-                <li>Athletics  00</li>
-                <li>Deception  00</li>
-                <li>History  00</li>
-                <li>Insight  00</li>
-                <li>Intimidation  00</li>
-                <li>Investigation  00</li>
-                <li>Medecine  00</li>
-                <li>Nature  00</li>
-                <li>Perception  00</li>
-                <li>Performance  00</li>
-                <li>Persuasion  00</li>
-                <li>Religion  00</li>
-                <li>Slight of hand  00</li>
-                <li>Stealth  00</li>
-                <li>Survival  00</li></div>
-                
-                <div class="hitpoints grid">
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
+        </div><br>
+        <div class="score">
 
-<div class="hit">
-    <p>Hit Points</p>
-    <i class="fa fa-shield" ></i>
-</div>
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
+        </div><br>
+        <div class="score">
 
-                    <p>Armor Class</p>
-                    <h2>Initiative:00</h2>
-                    
-                    
-                    </div>
-                </ul>
-                
-                    
-                </div>
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
+        </div><br>
+        <div class="score">
+
+          <p>10</p>
+          <h1>20</h1>
+          <p>strength</p>
+        </div><br>
+      </div>
+      <div class="skills">
+
+        <div class="item1">
+          <h1>skills</h1>
+          <ul>
+            <li>Acrobatics 00</li>
+            <li>Animal Handling 00</li>
+            <li>Arcana 00</li>
+            <li>Athletics 00</li>
+            <li>Deception 00</li>
+            <li>History 00</li>
+            <li>Insight 00</li>
+            <li>Intimidation 00</li>
+            <li>Investigation 00</li>
+            <li>Medicine 00</li>
+            <li>Nature 00</li>
+            <li>Perception 00</li>
+            <li>Performance 00</li>
+            <li>Persuasion 00</li>
+            <li>Religion 00</li>
+            <li>Slight of hand 00</li>
+            <li>Stealth 00</li>
+            <li>Survival 00</li>
+        </div>
+
+        <div class="hitpoints grid">
+
+          <div class="hit">
+            <p>Hit Points</p>
+            <i class="fa fa-shield"></i>
+          </div>
+
+          <p>Armor Class</p>
+          <h2>Initiative:00</h2>
+
+
+        </div>
+        </ul>
+
+
+      </div>
 
 
     </section>
 
-</main>
+  </main>
 
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form>
+        <h1>Create a Character</h1>
+
+        <div class="form-group">
+          <div class="row">
+            <div class="form-group col-md-4">
+              <label for="inputName">Enter Name:</label>
+              <input type="email" class="form-control" id="inputName" placeholder="Character Name">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Strength</label>
+            <select class="form-control strength-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Dexterity</label>
+            <select class="form-control dexterity-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Constitution</label>
+            <select class="form-control constitution-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Constitution</label>
+            <select class="form-control constitution-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Wisdom</label>
+            <select class="form-control wisdom-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="exampleFormControlSelect1">Charisma</label>
+            <select class="form-control charisma-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+            </select>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Select a Race</label>
+            <select class="form-control race-select">
+              <option value="dragonborn">Dragonborn</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="elf">Elf</option>
+              <option value="gnome">Gnome</option>
+              <option value="half-elf">Half-Elf</option>
+              <option value="halfling">Halfling</option>
+              <option value="half-orc">Half-Orc</option>
+              <option value="human">Human</option>
+              <option value="tiefling">Tiefling</option>
+            </select>
+            <br>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select a Class</label>
+              <select class="form-control class-select">
+                <option value="artificer">Artificer</option>
+                <option value="barbarian">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cleric">Cleric</option>
+                <option value="druid">Druid</option>
+                <option value="fighter">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="paladin">Paladin</option>
+                <option value="ranger">Ranger</option>
+                <option value="rogue">Rogue</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="warlock">Warlock</option>
+                <option value="wizard">Wizard</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select a Level</label>
+              <select class="form-control level-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+              </select>
+            </div>
+            <br>
+          </div>
+
+          <br>
+          <div class="form-group">
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="inputHitPoints">Hit Points</label>
+                <input type="email" class="form-control" id="inputHitPoints" placeholder="Hit Points">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputArmorClass">Armor Class</label>
+                <input type="password" class="form-control" id="inputArmorClass" placeholder="Armor Class">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputInitiative">Initiative</label>
+                <input type="password" class="form-control" id="inputInitiative" placeholder="Initiative">
+              </div>
+            </div>
+          </div>
+          <p></p>
+          <br>
+          <p>Select Skill Profincancies:</p>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input acrobatics-check" type="checkbox" value="Acrobatics ">
+              <label class="form-check-label" for="inlineCheckboxAcrobatics">Acrobatics </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input animal-handling-check" type="checkbox" value="Animal-Handling">
+              <label class="form-check-label" for="inlineCheckbox2">Animal Handling</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input arcana-check" type="checkbox" value="Arcana">
+              <label class="form-check-label" for="inlineCheckbox1">Arcana</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input athletics-check" type="checkbox" value="Athletics">
+              <label class="form-check-label" for="inlineCheckboxAthletics">Athletics</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input deception-check" type="checkbox" value="Deception">
+              <label class="form-check-label" for="inlineCheckboxDeception">Deception</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input history-check" type="checkbox" value="History">
+              <label class="form-check-label" for="inlineCheckboxHistory">History</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input insight-check" type="checkbox" value="Insight">
+              <label class="form-check-label" for="inlineCheckboxInsight">Insight</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input intimidation-check" type="checkbox" value="Intimidation">
+              <label class="form-check-label" for="inlineCheckboxIntimidation">Intimidation</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input investigation-check" type="checkbox" value="Investigation">
+              <label class="form-check-label" for="inlineCheckboxInvestigation">Investigation</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input medicine-check" type="checkbox" value="Medicine">
+              <label class="form-check-label" for="inlineCheckbox2">Medicine</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input nature-check" type="checkbox" value="Nature">
+              <label class="form-check-label" for="inlineCheckboxNature">Nature</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input perception-check" type="checkbox" value="Perception">
+              <label class="form-check-label" for="inlineCheckboxPerception">Perception</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input performance-check" type="checkbox" value="Performance">
+              <label class="form-check-label" for="inlineCheckboxPerformance">Performance</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input persuasion-check" type="checkbox" value="Persuasion">
+              <label class="form-check-label" for="inlineCheckboxPersuasion">Persuasion</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input religion-check" type="checkbox" value="Religion">
+              <label class="form-check-label" for="inlineCheckboxReligion">Religion</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input slight-of-hand-check" type="checkbox" value="Slight-of-Hand">
+              <label class="form-check-label" for="inlineCheckboxSlightOfHand">Slight of Hand</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input " type="checkbox" value="Stealth">
+              <label class="form-check-label" for="inlineCheckboStealth">Stealth</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="Survival">
+              <label class="form-check-label survival-check" for="inlineCheckboxSurvival">Survival</label>
+            </div>
+          </div>
+          <p></p>
+          <button type="submit" class="btn btn-primary character-submit">Save</button>
+
+
+      </form>
 
 
 
 
 
 </body>
+<script src="index.js"></script>
+
 </html>
