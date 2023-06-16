@@ -1,13 +1,24 @@
-.main-body {
-  display: flex;
-  height: auto;
-  background-color: aqua;
+
+.main-body{
+display: flex;
+height:auto;
+background-color: rgb(156, 156, 156);
 
 
 }
+.login{
+text-align: center;
+position: relative;
+    top: 300px;
+}
 
-form {
-  padding: 5px;
+
+
+
+
+form{
+padding: 5px;
+
 
 
 }
@@ -160,6 +171,18 @@ align-self: center;
   /* Could be more or less, depending on screen size */
 }
 
+.create{
+
+display: flex;
+
+
+
+
+
+}
+  
+
+
 /* The Close Button */
 .close {
   color: #aaa;
@@ -174,3 +197,4 @@ align-self: center;
   text-decoration: none;
   cursor: pointer;
 }
+
