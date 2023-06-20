@@ -1,25 +1,7 @@
-var modal = $("#myModal");
-var createModal = $("#createModal");
-var characterBtn = $(".create-character");
-var createAccountBtn = $(".create-account");
-var characterSubmitBtn = $(".character-submit");
-var span = document.getElementsByClassName("close")[0];
+const postCharacter = async (event) => {
 
-
-
-
-
-characterBtn.on("click", function () {
-    console.log("character button clicked");
-    modal.show();
-})
-characterSubmitBtn.on("click", function () {
-
-    var checkboxCheck = function () {
-
-    }
-
-    //const email = req.session.email;
+    event.preventDefault();
+    const email = req.session.email;
     const character_name = document.querySelector('#inputName').value.trim();
     const strength_score = document.querySelector('.strength-select').value;
     const dexterity_score = document.querySelector('.dexterity-select').value;
@@ -90,17 +72,9 @@ characterSubmitBtn.on("click", function () {
 
     sessionStorage.setItem("characterData", JSON.stringify(characterData));
 
-    console.log("character submit button clicked");
-    console.log(characterData);
-    console.log(acrobatics_prof);
 
+};
 
-
-    modal.hide();
-})
-
-
-span.onclick = function () {
-    modal.css({ "display": "none" });
-}
-
+document
+    .querySelector('.modal')
+    .addEventListener('submit', postCharacter);
