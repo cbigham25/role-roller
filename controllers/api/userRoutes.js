@@ -23,13 +23,30 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-      
+
       res.json({ user: userData, message: 'You are now logged in!' });
     });
 
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+router.post('/create', async (req, res) => {
+  const userData = await User.create({
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password
+  });
+
+  if (!userData) {
+    res
+      .status(400)
+      .json({ message: 'Incorrect email or password, please try again' });
+    return;
+  }
+
+
 });
 
 router.post('/logout', (req, res) => {
@@ -41,5 +58,7 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
+
 
 module.exports = router;

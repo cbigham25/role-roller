@@ -3,6 +3,7 @@ const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
+
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
@@ -20,13 +21,22 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
+router.get('/userLogin', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
 
-  res.render('login');
+  res.render('userLogin');
+});
+
+router.get('/userCreation', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('userCreation');
 });
 
 module.exports = router;
