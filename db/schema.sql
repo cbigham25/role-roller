@@ -1,2 +1,5 @@
 DROP DATABASE IF EXISTS character_db;
 CREATE DATABASE character_db;
+
+DROP DATABASE IF EXISTS user_db;
+CREATE DATABASE user_db;
