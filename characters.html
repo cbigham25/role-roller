@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="public/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -162,7 +162,7 @@
           <div class="row">
             <div class="form-group col-md-4">
               <label for="inputName">Enter Name:</label>
-              <input type="email" class="form-control" id="inputName" placeholder="Character Name">
+              <input class="form-control" id="inputName" placeholder="Character Name">
             </div>
           </div>
         </div>
@@ -244,8 +244,8 @@
             </select>
           </div>
           <div class="form-group col-md-2">
-            <label for="exampleFormControlSelect1">Constitution</label>
-            <select class="form-control constitution-select">
+            <label for="exampleFormControlSelect1">Intelligence</label>
+            <select class="form-control intelligence-select">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -389,15 +389,15 @@
             <div class="row">
               <div class="form-group col-md-4">
                 <label for="inputHitPoints">Hit Points</label>
-                <input type="email" class="form-control" id="inputHitPoints" placeholder="Hit Points">
+                <input class="form-control" id="inputHitPoints" placeholder="Hit Points">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputArmorClass">Armor Class</label>
-                <input type="password" class="form-control" id="inputArmorClass" placeholder="Armor Class">
+                <input class="form-control" id="inputArmorClass" placeholder="Armor Class">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputInitiative">Initiative</label>
-                <input type="password" class="form-control" id="inputInitiative" placeholder="Initiative">
+                <input class="form-control" id="inputInitiative" placeholder="Initiative">
               </div>
             </div>
           </div>
@@ -406,11 +406,11 @@
           <p>Select Skill Profincancies:</p>
           <div class="form-group">
             <div class="form-check form-check-inline">
-              <input class="form-check-input acrobatics-check" type="checkbox" value="Acrobatics ">
+              <input class="form-check-input acrobatics-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxAcrobatics">Acrobatics </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input animal-handling-check" type="checkbox" value="Animal-Handling">
+              <input class="form-check-input animal-handling-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckbox2">Animal Handling</label>
             </div>
             <div class="form-check form-check-inline">
@@ -418,63 +418,63 @@
               <label class="form-check-label" for="inlineCheckbox1">Arcana</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input athletics-check" type="checkbox" value="Athletics">
+              <input class="form-check-input athletics-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxAthletics">Athletics</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input deception-check" type="checkbox" value="Deception">
+              <input class="form-check-input deception-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxDeception">Deception</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input history-check" type="checkbox" value="History">
+              <input class="form-check-input history-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxHistory">History</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input insight-check" type="checkbox" value="Insight">
+              <input class="form-check-input insight-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxInsight">Insight</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input intimidation-check" type="checkbox" value="Intimidation">
+              <input class="form-check-input intimidation-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxIntimidation">Intimidation</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input investigation-check" type="checkbox" value="Investigation">
+              <input class="form-check-input investigation-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxInvestigation">Investigation</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input medicine-check" type="checkbox" value="Medicine">
+              <input class="form-check-input medicine-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckbox2">Medicine</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input nature-check" type="checkbox" value="Nature">
+              <input class="form-check-input nature-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxNature">Nature</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input perception-check" type="checkbox" value="Perception">
+              <input class="form-check-input perception-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxPerception">Perception</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input performance-check" type="checkbox" value="Performance">
+              <input class="form-check-input performance-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxPerformance">Performance</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input persuasion-check" type="checkbox" value="Persuasion">
+              <input class="form-check-input persuasion-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboxPersuasion">Persuasion</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input religion-check" type="checkbox" value="Religion">
+              <input class="form-check-input religion-check" type="checkbox" value="">
               <label class="form-check-label" for="inlineCheckboxReligion">Religion</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input slight-of-hand-check" type="checkbox" value="Slight-of-Hand">
-              <label class="form-check-label" for="inlineCheckboxSlightOfHand">Slight of Hand</label>
+              <input class="form-check-input sleight-of-hand-check" type="checkbox">
+              <label class="form-check-label" for="inlineCheckboxSlightOfHand">Sleight of Hand</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input " type="checkbox" value="Stealth">
+              <input class="form-check-input stealth-check" type="checkbox">
               <label class="form-check-label" for="inlineCheckboStealth">Stealth</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" value="Survival">
+              <input class="form-check-input survival-check" type="checkbox">
               <label class="form-check-label survival-check" for="inlineCheckboxSurvival">Survival</label>
             </div>
           </div>
