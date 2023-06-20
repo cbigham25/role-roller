@@ -11,11 +11,27 @@ Character.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        user_name: {
+        email: {
             type: DataTypes.STRING,
             allowNull: false,
         },
         character_id: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        character_name: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        character_race: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        level: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        character_class: {
             type: DataTypes.STRING,
             allowNull: true,
         },
