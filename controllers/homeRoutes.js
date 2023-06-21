@@ -32,11 +32,12 @@ router.get('/userLogin', (req, res) => {
 
 router.get('/userCreation', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('/');
+    res.redirect('characters');
     return;
   }
 
   res.render('userCreation');
 });
+
 
 module.exports = router;

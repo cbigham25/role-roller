@@ -3,8 +3,6 @@ require("dotenv").config();
 
 let sequelize;
 
-// JAWSDB_URL is created when we setup the mySQL JAWs Add On.
-// If its not there, you are probably in your local
 if (!process.env.JAWSDB_URL) {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -17,7 +15,6 @@ if (!process.env.JAWSDB_URL) {
     }
   );
 } else {
-  //Jaws DB Production URL
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 }
 
