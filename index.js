@@ -1,7 +1,13 @@
+var pdf = require("pdf-creator-node");
+var fs = require("fs");
+
+var html = fs.readFileSync("template.html", "utf8");
+
 var modal = $("#myModal");
 var createModal = $("#createModal");
 var characterBtn = $(".create-character");
 var createAccountBtn = $(".create-account");
+var pdfBtn = $(".create-pdf");
 var characterSubmitBtn = $(".character-submit");
 var span = document.getElementsByClassName("close")[0];
 
@@ -10,14 +16,11 @@ var span = document.getElementsByClassName("close")[0];
 
 
 characterBtn.on("click", function () {
-    console.log("character button clicked");
     modal.show();
 })
 characterSubmitBtn.on("click", function () {
 
-    var checkboxCheck = function () {
 
-    }
 
     //const email = req.session.email;
     const character_name = document.querySelector('#inputName').value.trim();
@@ -93,12 +96,52 @@ characterSubmitBtn.on("click", function () {
     console.log("character submit button clicked");
     console.log(characterData);
     console.log(acrobatics_prof);
-
-
-
     modal.hide();
+
+    return characterData;
+
 })
 
+pdfBtn.on("click", function () {
+
+    var options = {
+        format: "A3",
+        orientation: "portrait",
+        border: "10mm",
+        header: {
+            height: "45mm",
+            contents: '<div style="text-align: center;">Author: Marc Bachmann</div>'
+        },
+        footer: {
+            height: "28mm",
+            contents: {
+                first: 'Cover page',
+                2: 'Second page', // Any page number is working. 1-based index
+                default: '<span style="color: #444;">{{page}}</span>/<span>{{pages}}</span>', // fallback value
+                last: 'Last Page'
+            }
+        }
+    };
+
+    var characterData = JSON.parse(sessionStorage.getItem("characterData"));
+    var document = {
+        html: html,
+        data: {
+            characterData: characterData
+        },
+        path: "./output.pdf"
+    };
+
+    pdf.create(document, options)
+        .then(res => {
+            console.log(res);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+
+})
 
 span.onclick = function () {
     modal.css({ "display": "none" });
