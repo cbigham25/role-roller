@@ -1,6 +1,9 @@
 const postCharacter = async (event) => {
 
     event.preventDefault();
+
+
+
     const email = req.session.email;
     const character_name = document.querySelector('#inputName').value.trim();
     const strength_score = document.querySelector('.strength-select').value;
@@ -71,6 +74,8 @@ const postCharacter = async (event) => {
     };
 
     sessionStorage.setItem("characterData", JSON.stringify(characterData));
+
+
 
 
 };
