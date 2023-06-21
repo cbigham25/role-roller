@@ -1,4 +1,3 @@
-const sequelize = require('../config/connection');
 const { Character } = require('../models');
 
 const characterData = [
@@ -41,7 +40,7 @@ const characterData = [
 const seedCharacter = async () => {
     await sequelize.sync({ force: true });
 
-    await Character.bulkCreate(userData, {
+    await Character.bulkCreate(characterData, {
         individualHooks: true,
         returning: true,
     });
